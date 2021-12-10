@@ -8,7 +8,7 @@ namespace Generics
 {
     public class MaxNum
     {
-        public  int FindIntMax(int First, int Second, int Third)//Method for Comparing Numbers And Find Maximum interger Number
+        public int FindIntMax(int First, int Second, int Third)//Method for Comparing Numbers And Find Maximum interger Number
         {
             if (First.CompareTo(Second) > 0 && First.CompareTo(Third) > 0)
             {

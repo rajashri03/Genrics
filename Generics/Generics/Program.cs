@@ -10,13 +10,13 @@ while (check)
     switch (option)
     {
         case 1:
-           int result = max.FindIntMax(2,3,4);
+            int result = max.FindIntMax(2, 3, 4);
             Console.WriteLine("-----------------------------------");
             Console.WriteLine("Maximum Number is:" + result);// To display Maximum Number
             Console.WriteLine("-----------------------------------");
             break;
         case 2:
-            float result1 = max.FindFloatMax(2.7f,5.6f,3.5f);
+            float result1 = max.FindFloatMax(2.7f, 5.6f, 3.5f);
             Console.WriteLine("-----------------------------------");
             Console.WriteLine("Maximum Number is:" + result1);// To display Maximum Number
             Console.WriteLine("-----------------------------------");
