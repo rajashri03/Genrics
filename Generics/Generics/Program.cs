@@ -5,7 +5,7 @@ bool check = true;
 MaxNum max = new MaxNum();
 while (check)
 {
-    Console.Write("Select Option:\n1)Find Integer Maximum Number\n2)Find Float Maximum Number\n");
+    Console.Write("Select Option:\n1)Find Integer Maximum Number\n2)Find Float Maximum Number\n3)Find Maximum String");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
@@ -20,7 +20,12 @@ while (check)
             Console.WriteLine("-----------------------------------");
             Console.WriteLine("Maximum Number is:" + result1);// To display Maximum Number
             Console.WriteLine("-----------------------------------");
-
+            break;
+        case 3:
+            string result2 = max.FindMax_String("Apple","Peach","Banana");
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("Maximum String is:" + result2);// To display Maximum Number
+            Console.WriteLine("-----------------------------------");
             break;
         default:
             check = !check;
