@@ -9,7 +9,8 @@ while (check)
         "1)Find Integer Maximum Number\n" +
         "2)Find Float Maximum Number\n" +
         "3)Find Maximum String\n" +
-        "4)Refactor All to One Generic Method\n");
+        "4)Refactor All to One Generic Method\n" +
+        "5)Refactor All to One Generic Class\n");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
@@ -44,6 +45,15 @@ while (check)
             Console.WriteLine("Maximum Float Number  is:" + floatresult);
             Console.WriteLine("-----------------------------------");
             break;
+        case 5:
+            Using_GenericClass<int> Gresult1 = new Using_GenericClass<int>(2, 3, 4);
+            Gresult1.FindMax();
+            Using_GenericClass<string> Gresult2 = new Using_GenericClass<string>("Apple", "Banana", "Peach");
+            Gresult2.FindMax();
+            Using_GenericClass<float> Gresult3 = new Using_GenericClass<float>(2.7f, 3.4f, 6.4f);
+            Gresult3.FindMax();
+            break;
+
         default:
             check = !check;
             break;
